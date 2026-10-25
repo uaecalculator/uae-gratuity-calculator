@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAE Gratuity Calculator Guide | End of Service Benefits Explained</title>
+<meta name="description" content="How UAE end of service gratuity is calculated under Article 51 of the Labour Law: the 21 and 30 day formula, basic wage rules, worked examples, part-time notes, and the 14 day payment rule.">
+<link rel="canonical" href="https://uae-gratuity-calculator.onrender.com/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UAE Gratuity Calculator Guide | End of Service Benefits Explained">
+<meta property="og:description" content="The 21 and 30 day gratuity formula explained with worked examples, basic wage rules, part-time and domestic worker notes, and final settlement deadlines.">
+<meta property="og:url" content="https://uae-gratuity-calculator.onrender.com/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --green:#0b6b3a;
+  --green-dark:#084c29;
+  --navy:#12324f;
+  --gold:#c9a227;
+  --ink:#1d2733;
+  --muted:#5a6a78;
+  --line:#dde5ea;
+  --soft:#f2f7f4;
+  --soft-blue:#eef3f8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);line-height:1.65;background:#ffffff}
+.wrap{max-width:860px;margin:0 auto;padding:28px 20px 56px}
+header.top{border-bottom:3px solid var(--green);padding-bottom:18px;margin-bottom:8px}
+.kicker{color:var(--green);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;margin:0 0 8px}
+h1{font-size:2rem;line-height:1.25;color:var(--navy);margin:0 0 10px}
+.sub{color:var(--muted);font-size:1.02rem;margin:0}
+h2{font-size:1.45rem;color:var(--navy);margin:38px 0 12px;line-height:1.3}
+h3{font-size:1.13rem;color:var(--green-dark);margin:26px 0 8px;line-height:1.35}
+p{margin:0 0 14px}
+a{color:var(--green);text-decoration:underline}
+a:hover{color:var(--green-dark)}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+.callout{border-left:4px solid var(--gold);background:var(--soft);padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0}
+.callout strong{color:var(--navy)}
+.callout.blue{border-left-color:var(--navy);background:var(--soft-blue)}
+.toc{background:var(--soft-blue);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:24px 0}
+.toc p{font-weight:700;color:var(--navy);margin:0 0 8px}
+.toc ol{margin:0}
+.toc a{text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.calc{background:#ffffff;border:2px solid var(--green);border-radius:12px;padding:22px;margin:24px 0}
+.calc h2{margin-top:0}
+.calc label{display:block;font-weight:600;color:var(--navy);margin:14px 0 6px}
+.calc input{width:100%;padding:11px 12px;font-size:1rem;border:1px solid var(--line);border-radius:8px}
+.calc .result{margin-top:18px;background:var(--soft);border-radius:8px;padding:14px 16px}
+.calc .amount{font-size:1.5rem;font-weight:700;color:var(--green-dark)}
+.calc .detail{color:var(--muted);font-size:.95rem}
+table{width:100%;border-collapse:collapse;margin:16px 0 22px;font-size:.97rem}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#ffffff}
+tr:nth-child(even) td{background:#f7faf8}
+.formula{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:18px 0;font-size:1.02rem}
+.formula p{margin:0 0 6px}
+.faq h3{color:var(--navy)}
+footer{border-top:2px solid var(--line);margin-top:44px;padding-top:18px;color:var(--muted);font-size:.95rem}
+footer strong{color:var(--navy)}
+@media (max-width:600px){
+  h1{font-size:1.6rem}
+  h2{font-size:1.25rem}
+  .wrap{padding:20px 14px 44px}
+  table{font-size:.9rem}
+  th,td{padding:7px 8px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is gratuity calculated in the UAE?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Under Article 51 of Federal Decree-Law No. 33 of 2021, gratuity is worked out from the last basic wage. The daily wage is the monthly basic wage divided by 30. The first five years of service earn 21 days of basic wage per year, and every year after the fifth earns 30 days. The total is capped at two years of wage."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do I qualify for gratuity if I resign?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Under the current Labour Law, resigning does not reduce the gratuity. An eligible employee who completes at least one year of continuous service keeps the full amount the formula produces, whether the contract ends by resignation, mutual agreement, or termination by the employer."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is gratuity based on basic salary or total salary?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Gratuity is based on the basic wage only. Housing, transport, and other allowances are not counted, even when they make up a large share of the monthly package. Using the total salary in an estimate produces a figure that is higher than the amount the law sets."}
+    },
+    {
+      "@type": "Question",
+      "name": "When does an employee become eligible for gratuity?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Eligibility starts after one full year of continuous service with the same employer. Service beyond complete years is counted proportionally, so a person who works four years and six months is credited with the extra half year rather than losing it."}
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum gratuity an employee can receive?",
+      "acceptedAnswer": {"@type": "Answer", "text": "The total gratuity cannot exceed two years of wage. On a monthly basic wage of AED 10,000, the ceiling is AED 240,000. The cap only starts to bite after very long service, around twenty five and a half years at that salary level."}
+    },
+    {
+      "@type": "Question",
+      "name": "How is gratuity worked out for part-time employees?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Part-time employees earn a pro-rata share. The share follows the ratio of their working hours to full-time hours. Someone working 20 hours a week against a 48 hour full-time week holds a ratio of 41.67 percent, so their gratuity is 41.67 percent of the amount a full-time colleague on the same basic wage would receive for the same period."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do domestic workers get gratuity under the same formula?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Domestic workers are covered by a separate law, Federal Decree-Law No. 9 of 2022, which does not set out a gratuity formula of its own. Their end of service position follows the practice applied by the Ministry of Human Resources and Emiratisation rather than the Article 51 calculation."}
+    },
+    {
+      "@type": "Question",
+      "name": "When must an employer pay the final settlement?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Article 53 of the Labour Law requires the employer to pay the worker's end of service dues, including gratuity and any other outstanding amounts, within 14 days of the contract ending. A settlement that arrives later than that is late under the law."}
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my employer joins the alternative savings scheme?",
+      "acceptedAnswer": {"@type": "Answer", "text": "If an employer opts into the voluntary alternative end of service savings scheme, monthly contributions are paid into an investment fund for the employee instead of building up the classic gratuity. The employee's entitlement then follows the scheme's rules and the value of the fund rather than the 21 and 30 day formula."}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+<p class="kicker">UAE End of Service Guide</p>
+<h1>UAE Gratuity Calculator Guide: End of Service Benefits Explained</h1>
+<p class="sub">How the 21 and 30 day formula works, why only the basic wage counts, and what to check before your final settlement arrives.</p>
+</header>
+
+<p>End of service gratuity is the lump sum a private sector employee in the UAE receives when employment comes to an end. For most people it is the largest single payment of their working life in the country, yet it is often estimated with the wrong salary figure or an out of date rule. This guide walks through the calculation step by step so you can check any settlement against the law. If you want the number first and the reading after, the <a href="https://uaecalculators.ae/gratuity-calculator/">UAE gratuity calculator</a> applies the same formula used throughout this page.</p>
+
+<div class="callout">
+<p><strong>Good to know:</strong> The current rules sit in Article 51 of Federal Decree-Law No. 33 of 2021, the UAE Labour Law. The law counts 21 days of basic wage for each of the first five years of service and 30 days for each year after that, using the last basic wage the employee earned. Resigning does not shrink the amount, and the total can never pass two years of wage.</p>
+</div>
+
+<nav class="toc">
+<p>On this page</p>
+<ol>
+<li><a href="#who-qualifies">Who qualifies for gratuity?</a></li>
+<li><a href="#formula">How the 21 and 30 day formula works</a></li>
+<li><a href="#basic-wage">Basic wage versus total salary</a></li>
+<li><a href="#examples">Worked examples at different salaries</a></li>
+<li><a href="#part-time-domestic">Part-time and domestic workers</a></li>
+<li><a href="#savings-scheme">The alternative savings scheme and the free zones</a></li>
+<li><a href="#settlement-timing">When the final settlement must be paid</a></li>
+<li><a href="#mistakes">Common gratuity mistakes</a></li>
+<li><a href="#faq">Frequently asked questions</a></li>
+</ol>
+</nav>
+
+<section class="calc" id="try">
+<h2>Try the Gratuity Calculator</h2>
+<p>Enter a monthly basic wage and a length of service below. The tool uses the Article 51 formula, counts partial years proportionally, and applies the two year cap automatically.</p>
+<label for="basic">Monthly basic salary (AED)</label>
+<input type="number" id="basic" value="10000" min="0" step="any" inputmode="decimal">
+<label for="years">Years of service (decimals allowed, for example 6.5)</label>
+<input type="number" id="years" value="6" min="0" step="any" inputmode="decimal">
+<div class="result">
+<div class="amount" id="result">AED 45,000.00</div>
+<div class="detail" id="detail">135 days of basic wage at a daily wage of AED 333.33</div>
+</div>
+<p class="detail">The estimate assumes at least one completed year of service with the same employer. For a date based service period and a full breakdown of a settlement, use the <a href="https://uaecalculators.ae/gratuity-calculator/">UAE gratuity calculator</a> on the main site.</p>
+</section>
+
+<h2 id="who-qualifies">Who Qualifies for End of Service Gratuity?</h2>
+
+<p>Gratuity belongs to the private sector system set by the federal Labour Law. A foreign employee working full time for a mainland private employer is the standard case the law describes. The benefit starts to build once the employee completes one full year of continuous service with the same employer. Service shorter than a year earns nothing under this system, which is why the one year mark matters so much in settlement talks.</p>
+
+<h3>Does the reason for leaving change the entitlement?</h3>
+
+<p>Under the current law, no. Older versions of UAE labour rules cut the gratuity of employees who resigned early, and many long serving residents still expect that reduction. Article 51 removed it. An eligible employee receives the full amount the formula produces whether they resign, reach the end of a fixed term, or are let go, subject to the serious misconduct provisions that can remove the benefit in narrow cases defined by the law.</p>
+
+<h3>Which workers sit outside the standard calculation?</h3>
+
+<p>Three groups follow different arrangements. Employees in the Dubai International Financial Centre and the Abu Dhabi Global Market work under their own employment regimes rather than the federal law. Domestic workers are covered by a separate statute, Federal Decree-Law No. 9 of 2022, which is discussed further below. Government employees and workers whose employers have joined the alternative savings scheme also land outside the classic formula, each in a different way.</p>
+
+<h2 id="formula">How Does the 21 and 30 Day Formula Work?</h2>
+
+<p>The calculation has three moves. First, turn the monthly basic wage into a daily wage by dividing it by 30. Second, count the days the service has earned: 21 days for every year in the first five, then 30 days for every year beyond five. Third, multiply the daily wage by the total days. Partial years count proportionally, so seven months into a new service year still adds its share.</p>
+
+<div class="formula">
+<p><strong>Daily wage</strong> = monthly basic wage ÷ 30</p>
+<p><strong>Days earned</strong> = (21 × years in the first five) + (30 × years after the fifth)</p>
+<p><strong>Gratuity</strong> = daily wage × days earned, capped at two years of wage</p>
+</div>
+
+<h3>What does the ladder look like on a basic wage of AED 10,000?</h3>
+
+<p>A monthly basic wage of AED 10,000 gives a daily wage of AED 333.33. The table shows how the entitlement grows as service lengthens on that wage.</p>
+
+<table>
+<tr><th>Monthly basic wage</th><th>Years of service</th><th>Days counted</th><th>Gratuity</th></tr>
+<tr><td>AED 10,000</td><td>3</td><td>63</td><td>AED 21,000</td></tr>
+<tr><td>AED 10,000</td><td>6</td><td>135</td><td>AED 45,000</td></tr>
+<tr><td>AED 10,000</td><td>10</td><td>255</td><td>AED 85,000</td></tr>
+</table>
+
+<p>Notice the jump in pace after year five. The sixth year alone adds AED 10,000, because a full 30 days at AED 333.33 comes to that amount, while each of the first five years added AED 7,000. Long service is rewarded twice over: more years, and a richer rate for each later year.</p>
+
+<h3>When does the two year cap start to matter?</h3>
+
+<p>The cap limits the total gratuity to two years of wage, which is 24 times the monthly basic wage. On a basic wage of AED 10,000 the ceiling is AED 240,000. The formula only reaches it after about twenty five and a half years. An employee with 26 years of service would produce a raw figure of AED 245,000 (735 days at AED 333.33), and the amount actually payable is the capped AED 240,000. For most careers the cap never comes into play, but it is worth knowing it exists before negotiating a settlement after very long service.</p>
+
+<h2 id="basic-wage">Why Does Gratuity Use the Basic Wage and Not the Total Salary?</h2>
+
+<p>Most UAE salary packages split pay into a basic wage plus allowances for housing, transport, and other items. Article 51 builds the gratuity on the basic wage alone. The allowances that pad out the monthly deposit do not enter the calculation at all. Two employees receiving the same total pay can therefore be owed very different gratuities if their contracts split the package differently.</p>
+
+<h3>What counts as the basic wage?</h3>
+
+<p>The basic wage is the amount named as basic in the employment contract, before allowances are added. It is also the figure registered with the Ministry of Human Resources and Emiratisation for mainland employees. If a contract was amended and the basic wage rose over the years, the law points to the last basic wage earned, so the final figure in the contract is the one that drives the whole calculation, including for the earliest years of service.</p>
+
+<h3>How large is the error when the total salary is used?</h3>
+
+<p>Take an employee whose package totals AED 18,000 a month, made up of a basic wage of AED 10,000 and AED 8,000 of allowances. After six years, the correct gratuity is AED 45,000. Running the same service through the total package produces AED 81,000, an overstatement of AED 36,000. That gap explains many settlement disputes: the employee expects the larger number, the employer pays the lawful one, and both believe the other side has made an arithmetic mistake.</p>
+
+<div class="callout blue">
+<p><strong>Tip:</strong> Before estimating anything, open your contract or your MOHRE record and find the line marked basic salary. Every other figure on the payslip is decoration for gratuity purposes.</p>
+</div>
+
+<h2 id="examples">Worked Examples at Different Salaries and Service Lengths</h2>
+
+<p>The ladder above holds the salary still and moves the service. Real settlements move both. The examples below apply the same three moves to different combinations, including a partial year, so you can follow the method rather than just the answers.</p>
+
+<table>
+<tr><th>Monthly basic wage</th><th>Service</th><th>Working</th><th>Gratuity</th></tr>
+<tr><td>AED 6,000</td><td>4 years</td><td>AED 200 daily wage × 84 days</td><td>AED 16,800</td></tr>
+<tr><td>AED 8,000</td><td>2 years 6 months</td><td>AED 266.67 daily wage × 52.5 days</td><td>AED 14,000</td></tr>
+<tr><td>AED 15,000</td><td>12 years</td><td>AED 500 daily wage × 315 days</td><td>AED 157,500</td></tr>
+<tr><td>AED 10,000</td><td>26 years</td><td>AED 333.33 daily wage × 735 days = AED 245,000, then capped</td><td>AED 240,000</td></tr>
+</table>
+
+<h3>How is a partial year handled?</h3>
+
+<p>The AED 8,000 example shows the method. Two and a half years of service earns 21 days for each full year plus half of a further 21 days, which is 52.5 days in total. Multiplied by the daily wage of AED 266.67, the result is AED 14,000. Nothing is rounded down to the last completed year once the first year of service is behind the employee.</p>
+
+<h2 id="part-time-domestic">How Are Part-Time and Domestic Workers Treated?</h2>
+
+<h3>Part-time employees</h3>
+
+<p>Part-time work earns a pro-rata share of the full-time entitlement. The share follows the ratio between the hours the part-time employee works and the hours of a comparable full-time role. A person working 20 hours a week against a 48 hour full-time week holds a ratio of 41.67 percent. If a full-time colleague on the same basic wage and service would receive AED 45,000, the part-time employee receives 41.67 percent of that figure, which is AED 18,750. The formula stays the same; only the final proportion changes.</p>
+
+<h3>Domestic workers</h3>
+
+<p>Domestic workers, such as drivers, cooks, and household staff, are not covered by the Labour Law that sets the Article 51 formula. Their employment sits under Federal Decree-Law No. 9 of 2022, a separate law written for that sector. That law does not publish a gratuity formula of its own, so there is no 21 and 30 day ladder to apply. End of service questions for domestic workers follow the practice applied by the Ministry of Human Resources and Emiratisation, and anyone checking a domestic worker's settlement should confirm the current position with the Ministry rather than borrow the private sector calculation.</p>
+
+<h2 id="savings-scheme">What Is the Alternative End of Service Savings Scheme?</h2>
+
+<p>Alongside the classic gratuity, the UAE runs a voluntary alternative end of service savings scheme. An employer that opts in stops accruing the traditional lump sum for participating employees and instead pays monthly contributions into regulated investment funds in each employee's name. The employee's benefit then grows with the contributions and the fund's performance, and it is paid out when employment ends under the scheme's rules.</p>
+
+<p>For employees, the practical difference is where the money waits. Classic gratuity is a promise on the employer's balance sheet, settled at the end. Scheme contributions are invested along the way and held separately. Anyone whose employer joins the scheme should ask which of their service years stay under the old system and which move into the fund, because the two parts are settled differently.</p>
+
+<h3>How do DIFC and ADGM handle end of service benefits?</h3>
+
+<p>The two financial free zones run their own employment regimes. The Dubai International Financial Centre replaced its gratuity arrangement with a workplace savings plan known as DEWS, under which employers contribute monthly to an investment scheme for each employee. The Abu Dhabi Global Market applies its own employment regulations as well. Staff employed by free zone entities in either centre should follow their centre's rules and scheme statements rather than the federal formula on this page.</p>
+
+<h2 id="settlement-timing">When Must the Final Settlement Be Paid?</h2>
+
+<p>Gratuity rarely travels alone. It normally forms part of a final settlement that also clears the last salary, payment for unused annual leave, and any other dues, against any amounts the employee owes the employer. Article 53 of the Labour Law sets the deadline: the employer must pay the worker's dues within 14 days of the contract ending.</p>
+
+<p>That deadline gives employees a clear test. Count fourteen days from the last day of the contract, not from the date of a resignation letter or the end of a notice period served earlier. If the settlement has not arrived by then, the payment is late under the law, and the employee can raise the matter with the Ministry of Human Resources and Emiratisation. Keeping the contract, the last payslip, and the service dates in one folder makes any such conversation far shorter.</p>
+
+<div class="callout">
+<p><strong>Key point:</strong> The two dates that decide most settlements are the first day of service and the last basic wage. A one month error in the start date or a stale salary figure will move the result more than any rounding choice in the arithmetic.</p>
+</div>
+
+<h2 id="mistakes">Common Gratuity Mistakes to Avoid</h2>
+
+<ul>
+<li><strong>Using the total package.</strong> Allowances never enter the formula. Estimate from the basic wage in the contract.</li>
+<li><strong>Expecting a resignation cut.</strong> The reduction for resigning belonged to the old law. The current law keeps the full amount.</li>
+<li><strong>Losing the partial year.</strong> Service past the last full year counts proportionally. Dropping it underpays the settlement.</li>
+<li><strong>Forgetting the cap.</strong> After very long service the raw formula can pass two years of wage, and only the capped figure is payable.</li>
+<li><strong>Applying the formula to the wrong workforce.</strong> Domestic workers and DIFC or ADGM staff follow other rules entirely.</li>
+<li><strong>Guessing the start date.</strong> Service runs from the actual start of continuous employment, which may predate the current contract document after renewals.</li>
+<li><strong>Missing the 14 day window.</strong> Employees who do not track the Article 53 deadline often wait months before questioning a late settlement.</li>
+</ul>
+
+<h2>Related Tools and Resources</h2>
+
+<p>Gratuity is one part of a wider set of salary questions. The <a href="https://uaecalculators.ae/salary-labour-calculators/">Salary &amp; Labour Calculators</a> hub gathers the companion tools for leave, overtime, notice period, and net salary alongside the gratuity tool used in this guide.</p>
+
+<p>Related resource: the <a href="https://uaefinancialcal.netlify.app/">UAE Financial Calculator</a> page sets gratuity next to VAT, overtime, and mortgage estimates in a single overview.</p>
+
+<p>For the official texts, read the guidance published by the <a href="https://www.mohre.gov.ae/">Ministry of Human Resources and Emiratisation (MOHRE)</a> and the employment pages of the <a href="https://u.ae/">UAE Government portal</a>. The law and the contract always outrank any calculator, including this one.</p>
+
+<p>End of service money rewards a careful check. Run the formula on your last basic wage, count the partial year, watch the cap, and hold the settlement to its 14 day deadline. The full set of tools behind this guide lives at <a href="https://uaecalculators.ae/">uaecalculators.ae</a>, where the gratuity calculator and its companion salary tools are free to use.</p>
+
+<section class="faq" id="faq">
+<h2>Frequently Asked Questions</h2>
+
+<h3>1. How is gratuity calculated in the UAE?</h3>
+<p>Under Article 51 of Federal Decree-Law No. 33 of 2021, gratuity is worked out from the last basic wage. The daily wage is the monthly basic wage divided by 30. The first five years of service earn 21 days of basic wage per year, and every year after the fifth earns 30 days. The total is capped at two years of wage.</p>
+
+<h3>2. Do I qualify for gratuity if I resign?</h3>
+<p>Yes. Under the current Labour Law, resigning does not reduce the gratuity. An eligible employee who completes at least one year of continuous service keeps the full amount the formula produces, whether the contract ends by resignation, mutual agreement, or termination by the employer.</p>
+
+<h3>3. Is gratuity based on basic salary or total salary?</h3>
+<p>Gratuity is based on the basic wage only. Housing, transport, and other allowances are not counted, even when they make up a large share of the monthly package. Using the total salary in an estimate produces a figure that is higher than the amount the law sets.</p>
+
+<h3>4. When does an employee become eligible for gratuity?</h3>
+<p>Eligibility starts after one full year of continuous service with the same employer. Service beyond complete years is counted proportionally, so a person who works four years and six months is credited with the extra half year rather than losing it.</p>
+
+<h3>5. What is the maximum gratuity an employee can receive?</h3>
+<p>The total gratuity cannot exceed two years of wage. On a monthly basic wage of AED 10,000, the ceiling is AED 240,000. The cap only starts to bite after very long service, around twenty five and a half years at that salary level.</p>
+
+<h3>6. How is gratuity worked out for part-time employees?</h3>
+<p>Part-time employees earn a pro-rata share. The share follows the ratio of their working hours to full-time hours. Someone working 20 hours a week against a 48 hour full-time week holds a ratio of 41.67 percent, so their gratuity is 41.67 percent of the amount a full-time colleague on the same basic wage would receive for the same period.</p>
+
+<h3>7. Do domestic workers get gratuity under the same formula?</h3>
+<p>No. Domestic workers are covered by a separate law, Federal Decree-Law No. 9 of 2022, which does not set out a gratuity formula of its own. Their end of service position follows the practice applied by the Ministry of Human Resources and Emiratisation rather than the Article 51 calculation.</p>
+
+<h3>8. When must an employer pay the final settlement?</h3>
+<p>Article 53 of the Labour Law requires the employer to pay the worker's end of service dues, including gratuity and any other outstanding amounts, within 14 days of the contract ending. A settlement that arrives later than that is late under the law.</p>
+
+<h3>9. What happens if my employer joins the alternative savings scheme?</h3>
+<p>If an employer opts into the voluntary alternative end of service savings scheme, monthly contributions are paid into an investment fund for the employee instead of building up the classic gratuity. The employee's entitlement then follows the scheme's rules and the value of the fund rather than the 21 and 30 day formula.</p>
+</section>
+
+<h2>Quick Answers</h2>
+
+<p><strong>Q: Does resigning reduce my gratuity?</strong></p>
+<p>A: No. Under Federal Decree-Law No. 33 of 2021, an eligible employee keeps the full gratuity when resigning.</p>
+
+<p><strong>Q: How many days of pay count for each year of service?</strong></p>
+<p>A: 21 days of basic wage for each of the first five years, then 30 days for each year after the fifth.</p>
+
+<p><strong>Q: What salary figure does the formula use?</strong></p>
+<p>A: The last basic wage only. Allowances such as housing and transport are excluded.</p>
+
+<footer>
+<h2>Additional Details</h2>
+<p><strong>Name:</strong> UAE Gratuity Calculator Guide: End of Service Benefits Explained</p>
+<p><strong>Description:</strong> A plain language guide to UAE end of service gratuity under Article 51 of the Labour Law, with the 21 and 30 day formula, worked examples, part-time and domestic worker notes, the alternative savings scheme, and the 14 day settlement rule.</p>
+<p><strong>Updated:</strong> October 2026</p>
+</footer>
+
+</div>
+
+<script>
+function fmt(n) {
+  return n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+function calcGratuity() {
+  var basic = parseFloat(document.getElementById("basic").value);
+  var years = parseFloat(document.getElementById("years").value);
+  if (isNaN(basic)) { basic = 0; }
+  if (isNaN(years)) { years = 0; }
+  if (basic < 0) { basic = 0; }
+  if (years < 0) { years = 0; }
+  var daily = basic / 30;
+  var firstYears = Math.min(years, 5);
+  var laterYears = Math.max(years - 5, 0);
+  var days = 21 * firstYears + 30 * laterYears;
+  var result = daily * days;
+  var cap = 24 * basic;
+  var capped = false;
+  if (result > cap) {
+    result = cap;
+    capped = true;
+  }
+  var note = days + " days of basic wage at a daily wage of AED " + fmt(daily);
+  if (capped) {
+    note = note + " (raw total passed the cap, so the two year ceiling of AED " + fmt(cap) + " applies)";
+  }
+  document.getElementById("result").textContent = "AED " + fmt(result);
+  document.getElementById("detail").textContent = note;
+}
+document.getElementById("basic").addEventListener("input", calcGratuity);
+document.getElementById("years").addEventListener("input", calcGratuity);
+calcGratuity();
+</script>
+</body>
+</html>
