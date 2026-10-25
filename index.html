@@ -153,19 +153,10 @@ footer strong{color:var(--navy)}
 </ol>
 </nav>
 
-<section class="calc" id="try">
-<h2>Try the Gratuity Calculator</h2>
-<p>Enter a monthly basic wage and a length of service below. The tool uses the Article 51 formula, counts partial years proportionally, and applies the two year cap automatically.</p>
-<label for="basic">Monthly basic salary (AED)</label>
-<input type="number" id="basic" value="10000" min="0" step="any" inputmode="decimal">
-<label for="years">Years of service (decimals allowed, for example 6.5)</label>
-<input type="number" id="years" value="6" min="0" step="any" inputmode="decimal">
-<div class="result">
-<div class="amount" id="result">AED 45,000.00</div>
-<div class="detail" id="detail">135 days of basic wage at a daily wage of AED 333.33</div>
+<div class="callout" id="try" style="text-align:center">
+<p>Enter your basic salary and service years in the free calculator to get your exact end of service figure:</p>
+<p><a href="https://uaecalculators.ae/gratuity-calculator/" style="display:inline-block;background:#0b6b3a;color:#ffffff;font-weight:700;padding:14px 28px;border-radius:8px;font-size:18px;text-decoration:none">Calculate Your Gratuity</a></p>
 </div>
-<p class="detail">The estimate assumes at least one completed year of service with the same employer. For a date based service period and a full breakdown of a settlement, use the <a href="https://uaecalculators.ae/gratuity-calculator/">UAE gratuity calculator</a> on the main site.</p>
-</section>
 
 <h2 id="who-qualifies">Who Qualifies for End of Service Gratuity?</h2>
 
@@ -286,7 +277,7 @@ footer strong{color:var(--navy)}
 
 <p>Related resource: the <a href="https://uaefinancialcal.netlify.app/">UAE Financial Calculator</a> page sets gratuity next to VAT, overtime, and mortgage estimates in a single overview.</p>
 
-<p>For the official texts, read the guidance published by the <a href="https://www.mohre.gov.ae/">Ministry of Human Resources and Emiratisation (MOHRE)</a> and the employment pages of the <a href="https://u.ae/">UAE Government portal</a>. The law and the contract always outrank any calculator, including this one.</p>
+<p>For the official texts, read the guidance published by the <a href="https://www.mohre.gov.ae/">Ministry of Human Resources and Emiratisation (MOHRE)</a> and the employment pages of the <a href="https://u.ae/">UAE Government portal</a>. The law and the contract always outrank any calculator.</p>
 
 <p>End of service money rewards a careful check. Run the formula on your last basic wage, count the partial year, watch the cap, and hold the settlement to its 14 day deadline. The full set of tools behind this guide lives at <a href="https://uaecalculators.ae/">uaecalculators.ae</a>, where the gratuity calculator and its companion salary tools are free to use.</p>
 
@@ -340,39 +331,5 @@ footer strong{color:var(--navy)}
 </footer>
 
 </div>
-
-<script>
-function fmt(n) {
-  return n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-function calcGratuity() {
-  var basic = parseFloat(document.getElementById("basic").value);
-  var years = parseFloat(document.getElementById("years").value);
-  if (isNaN(basic)) { basic = 0; }
-  if (isNaN(years)) { years = 0; }
-  if (basic < 0) { basic = 0; }
-  if (years < 0) { years = 0; }
-  var daily = basic / 30;
-  var firstYears = Math.min(years, 5);
-  var laterYears = Math.max(years - 5, 0);
-  var days = 21 * firstYears + 30 * laterYears;
-  var result = daily * days;
-  var cap = 24 * basic;
-  var capped = false;
-  if (result > cap) {
-    result = cap;
-    capped = true;
-  }
-  var note = days + " days of basic wage at a daily wage of AED " + fmt(daily);
-  if (capped) {
-    note = note + " (raw total passed the cap, so the two year ceiling of AED " + fmt(cap) + " applies)";
-  }
-  document.getElementById("result").textContent = "AED " + fmt(result);
-  document.getElementById("detail").textContent = note;
-}
-document.getElementById("basic").addEventListener("input", calcGratuity);
-document.getElementById("years").addEventListener("input", calcGratuity);
-calcGratuity();
-</script>
 </body>
 </html>
